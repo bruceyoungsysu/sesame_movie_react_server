@@ -1,7 +1,8 @@
 import React from 'react';
-import profile from '../../index'
+import profile from '../index'
 import ReactDOM from "react-dom";
-import LeftPanel from "../LeftPanel";
+import LeftPanel from "./Panel/LeftPanel";
+import Logo from "./NavBar/Logo";
 
 class UserProfile extends React.Component{
 
@@ -14,13 +15,7 @@ class UserProfile extends React.Component{
     render(){
         return(
             <header id="header" className="header">
-                <div className="top-left">
-                    <div className="navbar-header">
-                        <a className="navbar-brand" href=".."><img src={require("../../images/sasame2.png")} alt="Logo" height="40" width="40"/></a>
-                        <a className="navbar-brand hidden" href=".."><img src={require("../../images/sasame.png")} alt="Logo" height="45" width="100"/></a>
-                        <a id="menuToggle" className="menutoggle"><i className="fa fa-bars"></i></a>
-                    </div>
-                </div>
+                <Logo login="user"/>
         <div className="top-right">
             <div className="header-menu">
                 <div className="header-left">

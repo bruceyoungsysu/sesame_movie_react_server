@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import DashBoard from "./DashBoard/DashBoard";
-import MovieCards from "./CotentPages/MovieCards";
+import DashBoard from "../DashBoard/DashBoard";
+import MovieCards from "../CotentPages/MovieCards";
 import ReactDOM from 'react-dom';
-import UserProfile from "./UserProfile";
-import TablePage from "../tables/TablePage";
+import UserProfile from "../UserProfile";
+import TablePage from "../../tables/TablePage";
 
 class LeftPanel extends React.Component{
     render(){
@@ -25,6 +25,21 @@ class LeftPanel extends React.Component{
                                 <a href="#" onClick={function () {
                                     ReactDOM.render(<MovieCards />, document.getElementById('rightpanel'));
                                 }}> <i className="menu-icon fa fa-cogs"></i>Movies</a>
+                            </li>
+                            <li>
+                                <a href="#"> <i className="menu-icon fa fa-cogs"></i>Pick a Movie</a>
+                            </li>
+                            <li>
+                                <a href="#"> <i className="menu-icon fa fa-cogs"></i>News & Tickets</a>
+                            </li>
+                            <li>
+                                <a href="#"> <i className="menu-icon fa fa-cogs"></i>Ranking</a>
+                            </li>
+                            <li>
+                                <a href="#"> <i className="menu-icon fa fa-cogs"></i>Genres</a>
+                            </li>
+                            <li>
+                                <a href="#"> <i className="menu-icon fa fa-cogs"></i>Hot comments</a>
                             </li>
                         </ul>
                     </div>
