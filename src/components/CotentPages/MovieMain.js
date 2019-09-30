@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from "./Header";
 import MovieTrending from "./MovieTrending";
 import MovieGenres from "./MovieGenres";
 

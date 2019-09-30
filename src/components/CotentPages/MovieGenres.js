@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from "react-dom";
 import MovieCard from "./MovieCard";
 
 export default class MovieGenres extends React.Component{
@@ -46,7 +45,7 @@ export default class MovieGenres extends React.Component{
     searchGenreID(g){
         let id = -1;
         for(const genre of this.state.genres){
-            if(genre.name==g){
+            if(genre.name===g){
                 id = genre.id;
             }
         }
@@ -72,7 +71,7 @@ export default class MovieGenres extends React.Component{
                         {
                             this.state.movies.map((movie,idx) => {
                                 return(
-                                    <MovieCard movie={movie} idx={idx}/>
+                                    <MovieCard movie={movie} idx={idx} key={idx}/>
                                 );})}
                     </ul>
                 </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import CastDetail from "./CastDetail";
 import ReviewDetail from "./ReviewDetail";
 
 export default class Reviews extends React.Component{
@@ -28,7 +27,7 @@ export default class Reviews extends React.Component{
                 <h5>Reviews</h5>
                     {
                         this.state.reviews.slice(0,6).map((item, idx)=>(
-                            <ReviewDetail review={item}/>
+                            <ReviewDetail review={item} key={idx}/>
                         ))
 
                     }

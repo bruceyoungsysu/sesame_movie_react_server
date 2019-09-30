@@ -1,6 +1,10 @@
 body{
   width: 100vw;
 }
+
+button:hover{
+  cursor: pointer;
+}
 /*card*/
 .card {
   margin-bottom: 1.875em;
@@ -102,9 +106,27 @@ li.slide-item .poster  img{
   vertical-align: middle;
 }
 
-li.slide-item .title a{
+li.slide-item .title label:hover{
+  cursor: pointer;
+}
+
+li.slide-item .title label{
+  margin-bottom: 0px;
+}
+
+li.slide-item .title{
   overflow: hidden;
   text-end-overflow: hidden;
+  color:gray;
+  text-decoration: none !important;
+}
+
+.slide-box .title:hover{
+  color: orange;
+}
+
+.slide-box .title{
+  text-decoration: none !important;
 }
 
 .checked{
@@ -263,4 +285,127 @@ ul.genres-deck li{
   background-color: #e0a241;
   font-size: 0.7rem;
   padding: 10px;
+}
+
+/*login*/
+
+.login-buttons{
+  position:relative;
+  left:75%;
+  top:-35%;
+}
+
+.login-button{
+  background: transparent;
+  margin-left: 1%;
+  border-radius: 5px;
+  border-width: 0.1rem;
+  border-color: black;
+}
+
+.popup {
+  position: fixed;
+  width: 30%;
+  top: 25%;
+  left: 35%;
+  height: 50%;
+  background-color: #f1f2f7;
+  border: 1px #9b9b9b solid;
+}
+.popup-form {
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top:10%;
+}
+
+.form-control:focus{
+  border-color: #ed9c1c;
+  box-shadow:0 0 0 0.2rem #ebb867;
+}
+
+.popup-close{
+  background: transparent;
+  border: 0;
+  position: relative;
+  left:80%;
+  display: inline-block;
+  top:15px
+}
+
+.popup-title{
+  position: relative;
+  display: inline-block;
+  top:17px;
+  left:45%;
+}
+
+.btn-submit{
+  position: relative;
+  background: #ed9c1c;
+  border-radius: 5px;
+  width:100%;
+  height: 40px;
+}
+
+
+button:focus{
+  box-shadow:0 0 0 0.2rem #ebb867 !important;
+  outline:0px !important;
+}
+
+.popup-line{
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #9b9b9b;
+  position: relative;
+  top:25px;
+}
+
+.third-parties{
+  position: relative;
+  top:50px;
+}
+
+.third-party-btn{
+  position: relative;
+  margin:7%;
+  left:5%;
+  top:-25px;
+  width: 15%;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.third-party-btn i{
+  color: white;
+}
+
+.fb-btn{
+  background-color: #3b5998;
+}
+
+.tw-btn{
+  background-color: #00aced;
+}
+
+.gg-btn{
+  background-color: #d34836;
+}
+
+
+/*register specified*/
+
+.regi-title{
+  left:28%;
+  color: #e0a241;
+}
+
+.popup-register{
+  height: 60%;
+  top:20%;
+}
+
+.popup-btn-text{
+  color: white;
 }

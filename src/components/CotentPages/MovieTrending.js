@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from "react-dom";
 import MovieCard from "./MovieCard";
 
 export default class MovieTrending extends React.Component{
@@ -55,7 +54,7 @@ export default class MovieTrending extends React.Component{
                         {
                             this.state.movies.map((movie,idx) => {
                                 return(
-                                    <MovieCard movie={movie} idx={idx}/>
+                                    <MovieCard movie={movie} idx={idx} key={idx}/>
                                     );})}
                     </ul>
                 </div>

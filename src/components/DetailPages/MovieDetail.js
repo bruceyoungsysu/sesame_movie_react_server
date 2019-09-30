@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import DetailInfo from "./DetailInfo";
 import CastCrew from "./CastCrews";
 import Reviews from "./Reviews";

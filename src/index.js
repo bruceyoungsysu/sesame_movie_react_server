@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import MovieMain from "./components/CotentPages/MovieMain";
 import Header from "./components/CotentPages/Header";
 import styles from "./style.css"
@@ -22,6 +22,8 @@ ReactDOM.render(<Header />, document.getElementById('header'));
 ReactDOM.render(routing, document.getElementById('root'));
 
 profile();
+
+
 
 function profile(){
     fetch("http://localhost:8080/api/profile",{

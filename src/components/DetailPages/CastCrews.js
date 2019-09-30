@@ -28,7 +28,7 @@ export default class CastCrew extends React.Component{
                 <ul className="cast-deck">
                 {
                     this.state.casts.slice(0,5).map((item, idx)=>(
-                        <CastDetail cast={item}/>
+                        <CastDetail cast={item} key={idx}/>
                     ))
 
                 }

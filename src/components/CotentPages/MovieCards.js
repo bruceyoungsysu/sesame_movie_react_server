@@ -1,13 +1,9 @@
 import React from 'react';
-import ReactDOM from "react-dom";
 import SkyLight from 'react-skylight';
 import StarRatingComponent from 'react-star-rating-component';
 import RatingSerice from '../../services/RatingService'
 
 class ExampleCustom extends React.Component {
-    constructor(props){
-        super(props);
-    }
     render() {
         return (
             <div>
