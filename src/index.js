@@ -7,6 +7,20 @@ import styles from "./style.css"
 import MovieDetail from "./components/DetailPages/MovieDetail";
 
 
+function profile(){
+    fetch("http://localhost:8080/api/profile",{
+        credentials: 'include'
+    })
+        .then((res) => res.text())
+        .then(function (text) {
+            const logged = text.length;
+            if(logged){
+                console.log("logged!");
+                return true;
+            }
+        })
+}
+
 const routing = (
     <div style={styles}>
     <Router>
@@ -21,22 +35,4 @@ const routing = (
 ReactDOM.render(<Header />, document.getElementById('header'));
 ReactDOM.render(routing, document.getElementById('root'));
 
-profile();
-
-
-
-function profile(){
-    fetch("http://localhost:8080/api/profile",{
-        credentials: 'include'
-    })
-        .then((res) => res.text())
-        .then(function (text) {
-            const logged = text.length;
-            if(logged){
-                console.log("logged!")
-            }
-        });
-
-}
-
-export default profile;
+export default routing;

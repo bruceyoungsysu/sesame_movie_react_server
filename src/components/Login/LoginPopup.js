@@ -1,6 +1,39 @@
 import React from "react";
 
 export default class LoginPopup extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            userName:'',
+            password:'',
+            email:''
+        };
+        this.login = this.login.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    login(){
+
+        fetch("http://localhost:8080/api/login",{
+            method: 'post',
+            body: JSON.stringify(this.state),
+            credentials: 'include',
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+            .then(()=>alert(222));
+        console.log("logged in");
+    }
+
+    handleChange(event){
+        const target = event.target;
+        this.setState({
+            [target.name]: target.value
+        });
+        console.log(this.state)
+    }
+
     render() {
         return(
             <div className='popup'>
@@ -10,16 +43,15 @@ export default class LoginPopup extends React.Component{
                         <i className="fa fa-times" aria-hidden="true"/></button>
                     <form className="popup-form">
                         <div className="form-group">
-                            <input type="email" className="form-control" id="exampleInputEmail1"
-                                   aria-describedby="emailHelp" placeholder="Enter email"/>
-                                <small id="emailHelp" className="form-text text-muted">We'll never share your email with
-                                    anyone else.</small>
+                            <input type="username" className="form-control" id="InputUserName" onChange={this.handleChange}
+                                  name="userName" aria-describedby="emailHelp" placeholder="Enter username"/>
+                            <small id="usernameHelp" className="form-text text-muted">Your username should not be less than 5 characters.</small>
                         </div>
                         <div className="form-group">
-                            <input type="password" className="form-control" id="exampleInputPassword1"
-                                   placeholder="Password"/>
+                            <input type="password" className="form-control" id="exampleInputPassword1" onChange={this.handleChange}
+                                   name="password" placeholder="Password"/>
                         </div>
-                        <button type="submit" className="btn-submit"><div className="popup-btn-text">Submit</div></button>
+                        <button type="submit" className="btn-submit" onClick={this.login}><div className="popup-btn-text">Submit</div></button>
                         <div className="popup-line"/>
                         <div className="third-parties">
                             <button className="third-party-btn fb-btn"><i className="fa fa-facebook" aria-hidden="true"></i></button>

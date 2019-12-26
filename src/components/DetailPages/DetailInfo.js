@@ -10,6 +10,7 @@ export default class DetailInfo extends React.Component{
             size: "w500",
             release_date:"",
             genres:[],
+            movie_id:-1,
         }
     };
 
@@ -25,6 +26,7 @@ export default class DetailInfo extends React.Component{
 
     componentWillMount (){
         const url = "https://api.themoviedb.org/3/movie/";
+        this.setState({movie_id:this.props.movie_id});
         const newurl = url+ this.props.movie_id+"?api_key=d113a3fe13f42bdfbcdc57f21764d4a1&language=en-US";
         fetch(newurl)
             .then(response=>response.json())
@@ -45,7 +47,8 @@ export default class DetailInfo extends React.Component{
         };
 
         let poster = this.getposter();
-        let backdrop = this.getbackdrop()
+        let backdrop = this.getbackdrop();
+        console.log(backdrop);
         return(
             <div className="detail-info">
                 <div className="poster">
@@ -55,7 +58,7 @@ export default class DetailInfo extends React.Component{
                     <h1 className="title">{this.state.details.title}</h1>
                     <span className="date">{this.state.release_date.split("-")[0]}</span>
                 </div>
-                <MovieButton/>
+                <MovieButton movie_id = {this.props.movie_id}/>
                 <div className="detail-overview">
                     <h5>Overview</h5>
                     <p>{this.state.details.overview}</p>

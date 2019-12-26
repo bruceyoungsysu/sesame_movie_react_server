@@ -11,6 +11,7 @@ export default class MovieGenres extends React.Component{
             curgen:"",
         };
         this.nextSlide = this.nextSlide.bind(this);
+        this.preSlide = this.preSlide.bind(this);
     }
 
 
@@ -30,7 +31,18 @@ export default class MovieGenres extends React.Component{
 
     nextSlide(){
         var left = this.state.deck_left;
-        this.setState({deck_left:left-168*5});
+        if(left>=(-840*1)){
+            left = left-168*5;
+        }
+        this.setState({deck_left:left});
+    }
+
+    preSlide(){
+        var left = this.state.deck_left;
+        if(left<=(-100)){
+            left = left+168*5;
+        }
+        this.setState({deck_left:left});
     }
 
     ClickGenreTag(a){
@@ -63,7 +75,7 @@ export default class MovieGenres extends React.Component{
                 </div>
                 <div className="line"/>
                 <div className="genres-hd">
-                    <span  className="fa fa-arrow-circle-left arrow" aria-hidden="true"/>
+                    <span  className="fa fa-arrow-circle-left arrow" aria-hidden="true" onClick={this.preSlide}/>
                     <span className="fa fa-arrow-circle-right arrow" aria-hidden="true" onClick={this.nextSlide}/>
                 </div>
                 <div className="genres-bd">

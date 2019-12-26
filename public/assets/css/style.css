@@ -101,8 +101,9 @@ li.slide-item{
 
 li.slide-item .poster  img{
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-bottom: 1px;
   width: 128px;
+  height: 192px;
   vertical-align: middle;
 }
 
@@ -409,3 +410,30 @@ button:focus{
 .popup-btn-text{
   color: white;
 }
+
+.login-text{
+  position: relative;
+  width: 6%;
+  display: inline-block;
+}
+
+.login-welcome{
+  position: relative;
+  left: 80%;
+  top:-30%;
+  width: 100px;
+}
+
+.heart-on{
+  color: #B90312;
+}
+
+.fa:hover{
+  cursor:pointer;
+}
+
+/*set background picture to the back*/
+.backdrop{
+  z-index: 1;
+}
+

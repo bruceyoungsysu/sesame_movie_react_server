@@ -48,7 +48,7 @@ div.screening{
 }
 
 .screening-bd {
-  background: #f1f2f7;
+  background: white;
   margin-right: 370px;
   margin-top: 15px;
   width: 840px;
@@ -97,7 +97,7 @@ li.slide-item{
 
 li.slide-item .poster  img{
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-top: 5px;
   width: 128px;
   vertical-align: middle;
 }
@@ -158,7 +158,7 @@ li.slide-item .title a{
 }
 
 .line{
-  width: 50%;
+  width: 500px;
   height: 1px;
   border-bottom: 1px solid black;
   position: relative;
@@ -166,7 +166,7 @@ li.slide-item .title a{
 }
 
 .screen-line{
-  width: 50%;
+  width: 500px;
   height: 1px;
   border-bottom: 1px solid black;
   position: relative;
@@ -174,7 +174,7 @@ li.slide-item .title a{
 }
 
 .genres-bd{
-  background: #f1f2f7;
+  background: white;
   margin-right: 370px;
   margin-top: 15px;
   width: 840px;
@@ -438,6 +438,13 @@ button.btn{
   background: transparent;
   border-color: black;
   border-width: 2.5px;
+}
+
+footer{
+  margin-top: 10px;
+  margin-left: 200px;
+  color: gray;
+  font-size: 0.7rem;
 }
 
 
