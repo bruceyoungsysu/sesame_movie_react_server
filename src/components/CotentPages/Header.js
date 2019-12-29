@@ -97,7 +97,7 @@ export default class Header extends React.Component{
             console.log(this.state.userName);
             lll = <div className="login-buttons">
                 <h5 className="login-text">{this.state.userName}</h5>
-                <button className="login-button" onClick={this.signOff}>Sign Off</button>
+                <button className="login-button" onClick={this.signOff()}>Sign Off</button>
             </div>
         }
         else{
