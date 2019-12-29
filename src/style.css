@@ -268,7 +268,7 @@ ul.genres-deck li{
 .detail-info{
   background-color: #E09015;
   position: relative;
-  top:50px;
+  /*top:50px;*/
   height:564px;
   overflow: hidden;
   width:1440px;
