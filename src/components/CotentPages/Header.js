@@ -97,6 +97,7 @@ export default class Header extends React.Component{
         })
             .then(response => response.text())
             .then(data=>{
+                console.log(data.length);
                 if(data.length>0){
                     this.setState({logged:true})
                 }
