@@ -90,7 +90,18 @@ export default class Header extends React.Component{
 
     render() {
         let lll;
-        this.getLogged();
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/profile",{
+            credentials: 'include'
+        })
+            .then(response => response.text())
+            .then(data=>{
+                if(data.length>0){
+                    this.setState({logged:true})
+                }
+                else{
+                    this.setState({logged:false})
+                }
+            });
         console.log(this.state.logged);
         if(this.state.logged){
             this.getProfile();
