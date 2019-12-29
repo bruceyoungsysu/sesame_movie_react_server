@@ -295,6 +295,7 @@ ul.genres-deck li{
   display: inline;
   top:120px;
   left:550px;
+  z-index:1000;
 }
 .detail-title .title{
   display: inline-block;
