@@ -59,7 +59,7 @@ export default class LoginPopup extends React.Component{
                             <input type="password" className="form-control" id="exampleInputPassword1" onChange={this.handleChange}
                                    name="password" placeholder="Password"/>
                         </div>
-                        <button type="submit" className="btn-submit" onClick={this.login}><div className="popup-btn-text">Submit</div></button>
+                        <button type="submit" className="btn-submit" onClick={this.login()}><div className="popup-btn-text">Submit</div></button>
                         <div className="popup-line"/>
                         <div className="third-parties">
                             <button className="third-party-btn fb-btn"><i className="fa fa-facebook" aria-hidden="true"></i></button>
