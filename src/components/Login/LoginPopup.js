@@ -23,7 +23,7 @@ export default class LoginPopup extends React.Component{
                 'content-type': 'application/json'
             }
         })
-            .then((res)=>console.log(res));
+            .then(res=>console.log(res));
         console.log("logged in");
     }
 
