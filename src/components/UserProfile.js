@@ -7,7 +7,7 @@ import Logo from "./NavBar/Logo";
 class UserProfile extends React.Component{
 
     logout(){
-        fetch("http://localhost:8080/api/logout",{
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/logout",{
             method: 'get',
             credentials: 'include',
         }).then((res)=>console.log(res)).then(profile)

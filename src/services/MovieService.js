@@ -1,6 +1,6 @@
 export default class MovieService{
     static addOneRating(m_id,rate){
-        fetch("http://localhost:8080/api/movies/update",{
+        fetch("https://gentle-hamlet-03315.herokuapp.com/movies/update",{
             method: 'post',
             body: JSON.stringify({
                 key:{movie_id:m_id,

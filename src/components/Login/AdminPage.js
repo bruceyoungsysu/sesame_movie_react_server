@@ -10,7 +10,7 @@ class AdminPage extends React.Component{
             adminID:'',
         };
         this.login = function () {
-            fetch("http://localhost:8080/api/adminlogin",{
+            fetch("https://gentle-hamlet-03315.herokuapp.com/api/adminlogin",{
                 method: 'post',
                 body: JSON.stringify(this.state.adminID),
                 credentials: 'include',

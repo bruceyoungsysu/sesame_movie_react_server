@@ -15,7 +15,7 @@ class LoginPage extends React.Component{
             password:""
         };
         this.login = function () {
-            fetch("http://localhost:8080/api/login",{
+            fetch("https://gentle-hamlet-03315.herokuapp.com/api/login",{
                 method: 'post',
                 body: JSON.stringify(this.state),
                 credentials: 'include',

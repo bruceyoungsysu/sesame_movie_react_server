@@ -23,7 +23,7 @@ export default class MovieButton extends React.Component{
     }
 
     getLogged(){
-        fetch("http://localhost:8080/api/profile",{
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/profile",{
             credentials: 'include'
         })
             .then(response => response.text())

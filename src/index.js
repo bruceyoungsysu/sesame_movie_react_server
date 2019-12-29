@@ -8,7 +8,7 @@ import MovieDetail from "./components/DetailPages/MovieDetail";
 
 
 function profile(){
-    fetch("http://localhost:8080/api/profile",{
+    fetch("https://gentle-hamlet-03315.herokuapp.com/api/profile",{
         credentials: 'include'
     })
         .then((res) => res.text())

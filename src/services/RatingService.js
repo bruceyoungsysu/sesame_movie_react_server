@@ -1,6 +1,6 @@
 export default class RatingService{
     static addOneRating(m_id,rate){
-        fetch("http://localhost:8080/api/ratings/add",{
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/ratings/add",{
             method: 'post',
             body: JSON.stringify({
                 key:{movie_id:m_id,
@@ -16,7 +16,7 @@ export default class RatingService{
     }
 
     static getRatingById(m_id){
-        fetch("http://localhost:8080/api/ratings/"+m_id, {
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/ratings/"+m_id, {
             method: 'get',
             credentials: 'include',
         })

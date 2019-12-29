@@ -61,7 +61,7 @@ export default class Header extends React.Component{
     };
 
     getProfile(){
-        fetch("http://localhost:8080/api/profile",{
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/profile",{
             credentials: 'include'
         })
             .then((res) => res.json())
@@ -75,7 +75,7 @@ export default class Header extends React.Component{
     }
 
     signOff(){
-        fetch("http://localhost:8080/api/logout")
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/logout")
             .then(response => {
                 if(response.ok){
                     this.setState({logged:false,userName:""})

@@ -15,7 +15,7 @@ class RegisterPage extends React.Component{
         };
 
         this.register = function () {
-            fetch("http://localhost:8080/api/register",{
+            fetch("https://gentle-hamlet-03315.herokuapp.com/api/register",{
                 method: 'post',
                 body: JSON.stringify(this.state),
                 credentials: 'include',
