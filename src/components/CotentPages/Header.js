@@ -75,7 +75,9 @@ export default class Header extends React.Component{
     }
 
     signOff(){
-        fetch("https://gentle-hamlet-03315.herokuapp.com/api/logout")
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/logout",{
+            credentials: 'include'
+        })
             .then(response => {
                 if(response.ok){
                     this.setState({logged:false,userName:""})
