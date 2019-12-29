@@ -40,7 +40,7 @@ export default class MovieButton extends React.Component{
 
     getRecord(){
         if(this.state.logged){
-        fetch("http://localhost:8080/api/likes/" + this.props.movie_id, {
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/likes/" + this.props.movie_id, {
                 credentials:'include'
             })
             .then((res)=>res.text())
@@ -66,7 +66,7 @@ export default class MovieButton extends React.Component{
         this.setState({heart: !state});
         console.log(this.state.heart);
         // change the server part of data
-        fetch("http://localhost:8080/api/likes/" + this.props.movie_id,
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/likes/" + this.props.movie_id,
             {
                 credentials:'include',
                 method: 'post',

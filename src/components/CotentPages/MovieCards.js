@@ -33,7 +33,7 @@ export default class MovieCards extends React.Component{
     }
 
     getRatingById(m_id){
-        fetch("http://localhost:8080/api/ratings/"+m_id, {
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/ratings/"+m_id, {
             method: 'get',
             credentials: 'include',
         })
@@ -61,7 +61,7 @@ export default class MovieCards extends React.Component{
 
 
     componentDidMount(){
-        fetch("http://localhost:8080/api/movies")
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/movies")
             .then(response => response.json())  //handle promises
             .then(movies=>this.setState(
             {

@@ -10,6 +10,7 @@ export default class LoginPopup extends React.Component{
         };
         this.login = this.login.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.test = this.test.bind(this);
     }
 
     login(){
@@ -22,8 +23,15 @@ export default class LoginPopup extends React.Component{
                 'content-type': 'application/json'
             }
         })
-            .then(()=>alert(222));
+            .then((res)=>console.log(res));
         console.log("logged in");
+    }
+
+    test(){
+        fetch("https://gentle-hamlet-03315.herokuapp.com/api/users",{
+            method: 'get',
+        })
+            .then(res=>console.log(res))
     }
 
     handleChange(event){
