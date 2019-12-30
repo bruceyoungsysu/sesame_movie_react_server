@@ -37,7 +37,7 @@ This movie website is developed for rating and archiving the movies for each use
    The website also supports users to register or login. After logging in, the registered user name will be shown instead of the login button. 
    The login popup is shown as follows:
 
-   <img src="./img/image-20191230145943707.png" alt="image-20191230145943707" width=300px />
+   <img src="./img/image-20191230145943707.png" alt="image-20191230145943707" width=300px align=middle/>
 
    The header after login when we are using the user name of *react*:
 
