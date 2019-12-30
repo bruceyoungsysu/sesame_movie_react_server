@@ -8,15 +8,15 @@ This movie website is developed for rating and archiving the movies for each use
 
    On the front page of the Sesame Movie, I implemented two decks of movies in order to display movies in the form of cards. Each card is comprised of a fixed-size poster, movie's title and its rating from TMDB. There is also a group of forwarding and backward arrows to help the user to navigate to a different group of cards. 
 
-   <img src="./img/img_1.png" alt="image-20191230181929272" style="zoom:40%;" />
+   <img src="./img/img_1.png" alt="image-20191230181929272" width=800px />
 
    When the cursor is hovering over the poster, there will be a popup window showing the detailed introduction of the corresponding movie including the movie's full name, publishing date and content of the movie.
 
-   <img src="./img/image-20191229171633864.png" alt="image-20191229171633864" style="zoom:40%;" />
+   <img src="./img/image-20191229171633864.png" alt="image-20191229171633864" width=500px />
 
    The movie genres deck also provides tags to navigate to each genre by clicking on the corresponding text
 
-   <img src="./img/img_3.png" alt="image-20191230141836979" style="zoom:40%;" />
+   <img src="./img/img_3.png" alt="image-20191230141836979" width=800px />
 
    
 
@@ -24,28 +24,28 @@ This movie website is developed for rating and archiving the movies for each use
 
    By clicking on each movie's poster, the user will be able to navigate to the detail page of each movie. The detailed information of a movie includes a high-resolution poster of the movie, the movie name and its publishing date, a detailed overview and the genres it belongs to. There is also a background image crossing the whole width of the page.
 
-   <img src="./img/image-20191230143008418.png" alt="image-20191230143008418" style="zoom:40%;" /> 
+   <img src="./img/image-20191230143008418.png" alt="image-20191230143008418" width=800px /> 
 
    Below the detailed information of the movie, there lists the top-billed casts and top reviews in the form of decks
 
-   <img src="./img/image-20191230144439731.png" alt="image-20191230144439731" style="zoom:40%;" />
+   <img src="./img/image-20191230144439731.png" alt="image-20191230144439731" width=700px />
 
-   <img src="./img/image-20191230144547827.png" alt="image-20191230144547827" style="zoom:40%;" />
+   <img src="./img/image-20191230144547827.png" alt="image-20191230144547827" width=700px />
 
 3. **User Login and Like a Movie**
 
    The website also supports users to register or login. After logging in, the registered user name will be shown instead of the login button. 
    The login popup is shown as follows:
 
-   <img src="./img/image-20191230145943707.png" alt="image-20191230145943707" style="zoom:30%;" />
+   <img src="./img/image-20191230145943707.png" alt="image-20191230145943707" width=300px />
 
    The header after login when we are using the user name of *react*:
 
-   <img src="./img/image-20191230153607367.png" alt="image-20191230153607367" style="zoom:33%;" />
+   <img src="./img/image-20191230153607367.png" alt="image-20191230153607367" />
 
    After logging in, the user can keep their own record of liked movies by clicking on the heart icon. If a movie is already in the list of favorite movies, the heart icon will be shown as red:
 
-   <img src="./img/image-20191230162803175.png" alt="image-20191230162803175" style="zoom:40%;" />
+   <img src="./img/image-20191230162803175.png" alt="image-20191230162803175" width=500px />
 
    By clicking on the red heart again, the user can remove the movie from the favorite list.
 
