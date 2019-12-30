@@ -7,8 +7,8 @@ This movie website is developed for rating and archiving the movies for each use
 1. **Movie Browsing**
 
    On the front page of the Sesame Movie, I implemented two decks of movies in order to display movies in the form of cards. Each card is comprised of a fixed-size poster, movie's title and its rating from TMDB. There is also a group of forwarding and backward arrows to help the user to navigate to a different group of cards. 
-
-   <img src="./img/img_1.png" alt="image-20191230181929272" width=800px align="center"/>
+   <p align="center">
+   <img src="./img/img_1.png" alt="image-20191230181929272" width=800px /></p>
 
    When the cursor is hovering over the poster, there will be a popup window showing the detailed introduction of the corresponding movie including the movie's full name, publishing date and content of the movie.
 
