@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class LoginPopup extends React.Component{
+class LoginPopup extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -22,9 +22,9 @@ export default class LoginPopup extends React.Component{
             headers: {
                 'content-type': 'application/json'
             }
-        })
-            .then(res=>console.log(res));
-        console.log("logged in");
+        });
+        console.log(this.state);
+        window.location.reload(true);
     }
 
     test(){
@@ -39,7 +39,7 @@ export default class LoginPopup extends React.Component{
         this.setState({
             [target.name]: target.value
         });
-        console.log(this.state)
+        console.log(target.value)
     }
 
     render() {
@@ -49,7 +49,7 @@ export default class LoginPopup extends React.Component{
                     <h5 className="popup-title">Login</h5>
                     <button className="popup-close" onClick={this.props.closePopup}>
                         <i className="fa fa-times" aria-hidden="true"/></button>
-                    <form className="popup-form">
+                    <div className="popup-form">
                         <div className="form-group">
                             <input type="username" className="form-control" id="InputUserName" onChange={this.handleChange}
                                   name="userName" aria-describedby="emailHelp" placeholder="Enter username"/>
@@ -66,7 +66,7 @@ export default class LoginPopup extends React.Component{
                             <button className="third-party-btn gg-btn"><i className="fa fa-google-plus" aria-hidden="true"></i></button>
                             <button className="third-party-btn tw-btn"><i className="fa fa-twitter" aria-hidden="true"></i></button>
                         </div>
-                    </form>
+                    </div>
 
                 </div>
             </div>
@@ -74,3 +74,5 @@ export default class LoginPopup extends React.Component{
     }
 
 }
+
+export default LoginPopup;
