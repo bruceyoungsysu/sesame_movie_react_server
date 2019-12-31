@@ -29,24 +29,26 @@ This movie website is developed for rating and archiving the movies for each use
 
    Below the detailed information of the movie, there lists the top-billed casts and top reviews in the form of decks
 
-   <img src="./img/image-20191230144439731.png" alt="image-20191230144439731" width=700px align="center"/>
+   <p align="center">
+   <img src="./img/image-20191230144439731.png" alt="image-20191230144439731" width=700px/></p>
 
-   <img src="./img/image-20191230144547827.png" alt="image-20191230144547827" width=700px align="center"/>
+   <p align="center">
+   <img src="./img/image-20191230144547827.png" alt="image-20191230144547827" width=700px /></p>
 
 3. **User Login and Like a Movie**
 
    The website also supports users to register or login. After logging in, the registered user name will be shown instead of the login button. 
    The login popup is shown as follows:
-
-   <img src="./img/image-20191230145943707.png" alt="image-20191230145943707" width=300px align="center"/>
+   <p align="center">
+   <img src="./img/image-20191230145943707.png" alt="image-20191230145943707" width=300px align="center"/></p>
 
    The header after login when we are using the user name of *react*:
-
-   <img src="./img/image-20191230153607367.png" alt="image-20191230153607367" />
+   <p align="center">
+   <img src="./img/image-20191230153607367.png" alt="image-20191230153607367" /></p>
 
    After logging in, the user can keep their own record of liked movies by clicking on the heart icon. If a movie is already in the list of favorite movies, the heart icon will be shown as red:
-
-   <img src="./img/image-20191230162803175.png" alt="image-20191230162803175" width=500px align="center"/>
+   <p align="center">
+   <img src="./img/image-20191230162803175.png" alt="image-20191230162803175" width=500px align="center"/></p>
 
    By clicking on the red heart again, the user can remove the movie from the favorite list.
 
