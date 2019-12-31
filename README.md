@@ -25,7 +25,7 @@ This movie website is developed for rating and archiving the movies for each use
    By clicking on each movie's poster, the user will be able to navigate to the detail page of each movie. The detailed information of a movie includes a high-resolution poster of the movie, the movie name and its publishing date, a detailed overview and the genres it belongs to. There is also a background image crossing the whole width of the page.
 
    <p align="center">
-   <img src="./img/image-20191230143008418.png" alt="image-20191230143008418" width=700px align="center"/> </p>
+   <img src="./img/image-20191230143008418.png" alt="image-20191230143008418" width=600px align="center"/> </p>
 
    Below the detailed information of the movie, there lists the top-billed casts and top reviews in the form of decks
 
