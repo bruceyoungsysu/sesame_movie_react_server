@@ -23,7 +23,6 @@ class LoginPopup extends React.Component{
                 'content-type': 'application/json'
             }
         });
-        console.log(this.state);
         window.location.reload(true);
     }
 
@@ -39,7 +38,6 @@ class LoginPopup extends React.Component{
         this.setState({
             [target.name]: target.value
         });
-        console.log(target.value)
     }
 
     render() {

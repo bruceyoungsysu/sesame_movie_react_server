@@ -21,12 +21,20 @@ export default class MovieCard extends React.Component{
 
         getitle(){
             let title;
+            if(this.props.movie.title != undefined){
             if(this.props.movie.title.length>15){
                 title = this.props.movie.title.slice(0, 14) + " ..."
             }
             else{
                 title = this.props.movie.title;
-            }
+            }}
+            if(this.props.movie.name != undefined){
+                if(this.props.movie.name.length>15){
+                    title = this.props.movie.name.slice(0, 14) + " ..."
+                }
+                else{
+                    title = this.props.movie.name;
+                }}
             return title
         }
 
@@ -54,16 +62,24 @@ export default class MovieCard extends React.Component{
             }
         });
 
+        let link;
+        if(this.props.movie.title != undefined){
+            link = "/movie/"+this.props.movie.id
+        }
+        else{
+            link = "/tv/"+this.props.movie.id
+        }
+
 
         return(
             <li className="slide-item" id={this.props.idx}>
                 <ul className="slide-box">
-                    <Link to={"/"+this.props.movie.id}>
-                    <li className="poster">
+                    <Link to={link}>
+                        <li className="poster">
                             <MuiThemeProvider theme={theme}>
-                            <Tooltip title={<BriefToolTip movie = {this.props.movie} />} placement="right"><img alt="." src={poster}/></Tooltip>
+                                <Tooltip title={<BriefToolTip movie = {this.props.movie} />} placement="right"><img alt="." src={poster}/></Tooltip>
                             </MuiThemeProvider>
-                    </li>
+                        </li>
                         <li className="title"><label>{title}</label></li>
                     </Link>
                     <li className="rating">

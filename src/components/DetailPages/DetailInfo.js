@@ -25,14 +25,19 @@ export default class DetailInfo extends React.Component{
     }
 
     componentWillMount (){
-        const url = "https://api.themoviedb.org/3/movie/";
+        const url = "https://api.themoviedb.org/3/"+this.props.type+"/";
         this.setState({movie_id:this.props.movie_id});
         const newurl = url+ this.props.movie_id+"?api_key=d113a3fe13f42bdfbcdc57f21764d4a1&language=en-US";
         fetch(newurl)
             .then(response=>response.json())
             .then(details=>{
                 this.setState({details:details});
-                this.setState({release_date:details.release_date});
+                if(details.release_date){
+                    this.setState({release_date:details.release_date});
+                }
+                else if(details.last_air_date){
+                    this.setState({release_date:details.last_air_date});
+                }
                 this.setState({genres:details.genres});
                 console.log(details);
             });
@@ -55,7 +60,7 @@ export default class DetailInfo extends React.Component{
                     <img alt="." src={poster}/>
                 </div>
                 <div className="detail-title">
-                    <h1 className="title">{this.state.details.title}</h1>
+                    <h1 className="title">{this.state.details.title|| this.state.details.name}</h1>
                     <span className="date">{this.state.release_date.split("-")[0]}</span>
                 </div>
                 <MovieButton movie_id = {this.props.movie_id}/>

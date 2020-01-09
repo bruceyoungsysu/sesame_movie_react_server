@@ -72,6 +72,8 @@ export default class MovieGenres extends React.Component{
                     <label  onClick={this.ClickGenreTag.bind(this, "Action")}>Action</label>
                     <label  onClick={this.ClickGenreTag.bind(this, "Science Fiction")}>Science Fiction</label>
                     <label  onClick={this.ClickGenreTag.bind(this, "Comedy")}>Comedy</label>
+                    <label  onClick={this.ClickGenreTag.bind(this, "Drama")}>Drama</label>
+                    <label  onClick={this.ClickGenreTag.bind(this, "Animation")}>Animation</label>
                 </div>
                 <div className="line"/>
                 <div className="genres-hd">

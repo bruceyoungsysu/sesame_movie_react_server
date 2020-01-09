@@ -10,7 +10,7 @@ export default class Reviews extends React.Component{
     };
 
     componentWillMount (){
-        const url = "https://api.themoviedb.org/3/movie/";
+        const url = "https://api.themoviedb.org/3/"+this.props.type+"/";
         const newurl = url+ this.props.movie_id+"/reviews?api_key=d113a3fe13f42bdfbcdc57f21764d4a1&language=en-US&page=1";
         fetch(newurl)
             .then(response=>response.json())

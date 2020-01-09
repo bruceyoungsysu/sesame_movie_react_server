@@ -1,6 +1,8 @@
 import React from 'react'
 import MovieTrending from "./MovieTrending";
 import MovieGenres from "./MovieGenres";
+import TopRated from "./TopRated";
+import TVShows from "./TVShows";
 
 class MovieMain extends React.Component{
 
@@ -9,6 +11,7 @@ class MovieMain extends React.Component{
             <div>
                 <MovieTrending/>
                 <MovieGenres/>
+                <TVShows/>
             </div>
         )
     }

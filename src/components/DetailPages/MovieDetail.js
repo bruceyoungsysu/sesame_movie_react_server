@@ -20,7 +20,7 @@ export default class MovieDetail extends React.Component{
     }
 
     componentDidMount (){
-
+        window.scrollTo(0, 0);
         fetch("https://api.themoviedb.org/3/movie/28/credits?api_key=d113a3fe13f42bdfbcdc57f21764d4a1")
             .then(respose=>respose.json())
             .then(credits=>console.log(credits));
@@ -38,9 +38,9 @@ export default class MovieDetail extends React.Component{
     render() {
         return(
             <div>
-                <DetailInfo movie_id={this.state.movie_id}/>
-                <CastCrew movie_id={this.state.movie_id}/>
-                <Reviews movie_id={this.state.movie_id}/>
+                <DetailInfo movie_id={this.state.movie_id} type={"movie"}/>
+                <CastCrew movie_id={this.state.movie_id} type={"movie"}/>
+                <Reviews movie_id={this.state.movie_id} type={"movie"}/>
             </div>
         )
     }

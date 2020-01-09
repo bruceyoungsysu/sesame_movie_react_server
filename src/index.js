@@ -5,6 +5,7 @@ import MovieMain from "./components/CotentPages/MovieMain";
 import Header from "./components/CotentPages/Header";
 import styles from "./style.css"
 import MovieDetail from "./components/DetailPages/MovieDetail";
+import TVDetails from "./components/DetailPages/TVDetails";
 
 
 function profile(){
@@ -26,7 +27,8 @@ const routing = (
     <Router>
         <div>
             <Route exact path="/" component={MovieMain} />
-            <Route path="/:id" component={MovieDetail} />
+            <Route path="/movie/:id" component={MovieDetail} />
+            <Route path="/tv/:id" component={TVDetails}/>
         </div>
     </Router>
     </div>

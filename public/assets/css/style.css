@@ -292,7 +292,7 @@ ul.genres-deck li{
 
 .login-buttons{
   position:relative;
-  left:75%;
+  left:1100px;
   top:-35%;
 }
 
@@ -306,10 +306,10 @@ ul.genres-deck li{
 
 .popup {
   position: fixed;
-  width: 30%;
+  width: 430px;
   top: 25%;
   left: 35%;
-  height: 50%;
+  height: 390px;
   background-color: #f1f2f7;
   border: 1px #9b9b9b solid;
 }
